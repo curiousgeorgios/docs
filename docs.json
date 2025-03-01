@@ -1,56 +1,403 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Onestack documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#000000",
+    "light": "#FFFFFF",
+    "dark": "#000000"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Onestack",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "introduction"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Scheduling",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Documentation",
             "pages": [
-              "api-reference/introduction"
+              "cal_docs/welcome",
+              {
+                "group": "Quick Start",
+                "icon": "play",
+                "iconType": "solid",
+                "pages": [
+                  "cal_docs/quick-start/create-account",
+                  "cal_docs/quick-start/complete-onboarding",
+                  "cal_docs/quick-start/customization",
+                  "cal_docs/quick-start/calendar"
+                ]
+              },
+              {
+                "group": "Event Types",
+                "icon": "calendar",
+                "iconType": "solid",
+                "pages": [
+                  "cal_docs/event-types/event-types",
+                  "cal_docs/event-types/booking-questions",
+                  "cal_docs/event-types/add-events",
+                  "cal_docs/event-types/managed-events",
+                  "cal_docs/event-types/adding-zoom",
+                  "cal_docs/event-types/booking-frequency",
+                  "cal_docs/event-types/round-robin",
+                  "cal_docs/event-types/dynamic",
+                  "cal_docs/event-types/collective-events",
+                  "cal_docs/event-types/create-first-event",
+                  "cal_docs/event-types/create-phone-only-event-type",
+                  "cal_docs/event-types/create-recurring",
+                  "cal_docs/event-types/create-secret",
+                  "cal_docs/event-types/custom-name",
+                  "cal_docs/event-types/custom-time-slots",
+                  "cal_docs/event-types/disable-confirmation",
+                  "cal_docs/event-types/disable-guests",
+                  "cal_docs/event-types/display-issues",
+                  "cal_docs/event-types/dynamic",
+                  "cal_docs/event-types/event-buffer",
+                  "cal_docs/event-types/hide-notes",
+                  "cal_docs/event-types/how-to-add-location",
+                  "cal_docs/event-types/how-to-receive-payments",
+                  "cal_docs/event-types/how-to-requires",
+                  "cal_docs/event-types/how-to-set-buffer",
+                  "cal_docs/event-types/how-to-time-slot-intervals",
+                  "cal_docs/event-types/limit-future-bookings",
+                  "cal_docs/event-types/location-of-event",
+                  "cal_docs/event-types/min-notice",
+                  "cal_docs/event-types/multiple-durations",
+                  "cal_docs/event-types/offer-seats",
+                  "cal_docs/event-types/recurring-events",
+                  "cal_docs/event-types/require-criteria",
+                  "cal_docs/event-types/secret-events",
+                  "cal_docs/event-types/setup-location",
+                  "cal_docs/event-types/single-use",
+                  "cal_docs/event-types/split-name",
+                  "cal_docs/event-types/sponsor",
+                  "cal_docs/event-types/timezone-lock",
+                  "cal_docs/event-types/allow-rescheduling",
+                  "cal_docs/event-types/symbolic-issues"
+                ]
+              },
+              {
+                "group": "Availabilities",
+                "icon": "magnifying-glass",
+                "iconType": "solid",
+                "pages": [
+                  "cal_docs/availabilities/date-overrides",
+                  "cal_docs/availabilities/multiple-schedules",
+                  "cal_docs/availabilities/multiple-slots"
+                ]
+              },
+              {
+                "group": "Bookings",
+                "icon": "calendar-check",
+                "iconType": "solid",
+                "pages": [
+                  "cal_docs/bookings/no-show",
+                  "cal_docs/bookings/paid-bookings",
+                  "cal_docs/bookings/prefill-fields"
+                ]
+              },
+              {
+                "group": "Embedding",
+                "icon": "code",
+                "iconType": "solid",
+                "pages": [
+                  "cal_docs/embedding/adding-embed",
+                  "cal_docs/embedding/adding-slots",
+                  "cal_docs/embedding/embed-events",
+                  "cal_docs/embedding/embed-instructions",
+                  "cal_docs/embedding/embed-snippet-generator",
+                  "cal_docs/embedding/prefill-booking-form-embed"
+                ]
+              },
+              {
+                "group": "Auth and Provisioning",
+                "icon": "user-lock",
+                "iconType": "solid",
+                "pages": [
+                  "cal_docs/auth-and-provision/scim-okta",
+                  "cal_docs/auth-and-provision/oidc-with-okta"
+                ]
+              },
+              {
+                "group": "Apps and Integrations",
+                "icon": "code-branch",
+                "iconType": "solid",
+                "pages": [
+                  "cal_docs/apps-and-integrations/apps",
+                  "cal_docs/apps-and-integrations/app-store",
+                  "cal_docs/apps-and-integrations/adding-first-app",
+                  "cal_docs/apps-and-integrations/assign-people",
+                  "cal_docs/apps-and-integrations/build-greeter-app",
+                  "cal_docs/apps-and-integrations/how-to-build-an-app",
+                  "cal_docs/apps-and-integrations/syncing-third-party",
+                  "cal_docs/apps-and-integrations/attio"
+                ]
+              },
+              {
+                "group": "Privacy and Compliance",
+                "icon": "lock",
+                "iconType": "solid",
+                "pages": [
+                  "cal_docs/privacy-and-compliance/google-calendar-privacy"
+                ]
+              },
+              {
+                "group": "Developers",
+                "icon": "terminal",
+                "iconType": "solid",
+                "pages": [
+                  "cal_docs/apps-and-integrations/oauth",
+                  "cal_docs/apps-and-integrations/open-source",
+                  "cal_docs/apps-and-integrations/webhooks"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Document Signing",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "documenso-docs/apps/documentation/pages/index"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "User Guide",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "documenso-docs/apps/documentation/pages/users/index",
+              "documenso-docs/apps/documentation/pages/users/support",
+              {
+                "group": "Get Started",
+                "pages": [
+                  "documenso-docs/apps/documentation/pages/users/get-started/account-creation",
+                  "documenso-docs/apps/documentation/pages/users/get-started/account-security",
+                  "documenso-docs/apps/documentation/pages/users/get-started/teams"
+                ]
+              },
+              "documenso-docs/apps/documentation/pages/users/profile",
+              {
+                "group": "Signing Documents",
+                "pages": [
+                  "documenso-docs/apps/documentation/pages/users/signing-documents/index",
+                  "documenso-docs/apps/documentation/pages/users/signing-documents/fields"
+                ]
+              },
+              "documenso-docs/apps/documentation/pages/users/templates",
+              "documenso-docs/apps/documentation/pages/users/direct-links",
+              {
+                "group": "Teams",
+                "pages": [
+                  "documenso-docs/apps/documentation/pages/users/teams/branding-preferences",
+                  "documenso-docs/apps/documentation/pages/users/teams/document-visibility",
+                  "documenso-docs/apps/documentation/pages/users/teams/preferences",
+                  "documenso-docs/apps/documentation/pages/users/teams/sender-details"
+                ]
+              },
+              {
+                "group": "Compliance",
+                "pages": [
+                  "documenso-docs/apps/documentation/pages/users/compliance/signature-levels",
+                  "documenso-docs/apps/documentation/pages/users/compliance/standards-and-regulations"
+                ]
+              },
+              {
+                "group": "Licenses",
+                "pages": [
+                  "documenso-docs/apps/documentation/pages/users/licenses/index",
+                  "documenso-docs/apps/documentation/pages/users/licenses/community-edition",
+                  "documenso-docs/apps/documentation/pages/users/licenses/enterprise-edition"
+                ]
+              },
+              "documenso-docs/apps/documentation/pages/users/fair-use"
             ]
+          },
+          {
+            "group": "Developer Guide",
+            "pages": [
+              "documenso-docs/apps/documentation/pages/developers/index",
+              {
+                "group": "Local Development",
+                "pages": [
+                  "documenso-docs/apps/documentation/pages/developers/local-development/index",
+                  "documenso-docs/apps/documentation/pages/developers/local-development/quickstart",
+                  "documenso-docs/apps/documentation/pages/developers/local-development/manual",
+                  "documenso-docs/apps/documentation/pages/developers/local-development/gitpod",
+                  "documenso-docs/apps/documentation/pages/developers/local-development/signing-certificate",
+                  "documenso-docs/apps/documentation/pages/developers/local-development/translations"
+                ]
+              },
+              {
+                "group": "Self Hosting",
+                "pages": [
+                  "documenso-docs/apps/documentation/pages/developers/self-hosting/index",
+                  "documenso-docs/apps/documentation/pages/developers/self-hosting/how-to",
+                  "documenso-docs/apps/documentation/pages/developers/self-hosting/setting-up-oauth-providers",
+                  "documenso-docs/apps/documentation/pages/developers/self-hosting/signing-certificate"
+                ]
+              },
+              {
+                "group": "Contributing",
+                "pages": [
+                  "documenso-docs/apps/documentation/pages/developers/contributing/index",
+                  "documenso-docs/apps/documentation/pages/developers/contributing/contributing-translations"
+                ]
+              },
+              {
+                "group": "Public API",
+                "pages": [
+                  "documenso-docs/apps/documentation/pages/developers/public-api/index",
+                  "documenso-docs/apps/documentation/pages/developers/public-api/authentication",
+                  "documenso-docs/apps/documentation/pages/developers/public-api/reference",
+                  "documenso-docs/apps/documentation/pages/developers/public-api/versioning"
+                ]
+              },
+              {
+                "group": "Embedding",
+                "pages": [
+                  "documenso-docs/apps/documentation/pages/developers/embedding/index",
+                  "documenso-docs/apps/documentation/pages/developers/embedding/react",
+                  "documenso-docs/apps/documentation/pages/developers/embedding/vue",
+                  "documenso-docs/apps/documentation/pages/developers/embedding/angular",
+                  "documenso-docs/apps/documentation/pages/developers/embedding/svelte",
+                  "documenso-docs/apps/documentation/pages/developers/embedding/preact",
+                  "documenso-docs/apps/documentation/pages/developers/embedding/solid",
+                  "documenso-docs/apps/documentation/pages/developers/embedding/web-components",
+                  "documenso-docs/apps/documentation/pages/developers/embedding/css-variables"
+                ]
+              },
+              "documenso-docs/apps/documentation/pages/developers/webhooks"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Project Management",
+        "groups": [
+          {
+            "group": "Get started",
+            "pages": [
+              "plane_docs/home",
+              "plane_docs/introduction/quickstart",
+              "plane_docs/introduction/core-concepts"
+            ]
+          },
+          {
+            "group": "Project + work tracking",
+            "pages": [
+              "plane_docs/core-concepts/projects/overview",
+              "plane_docs/core-concepts/issues/overview",
+              "plane_docs/core-concepts/cycles",
+              "plane_docs/core-concepts/modules",
+              "plane_docs/core-concepts/intake",
+              "plane_docs/core-concepts/issues/estimates",
+              "plane_docs/core-concepts/drafts",
+              "plane_docs/core-concepts/inbox"
+            ]
+          },
+          {
+            "group": "Project + work management",
+            "pages": [
+              "plane_docs/core-concepts/issues/issue-types",
+              "plane_docs/core-concepts/issues/time-tracking",
+              "plane_docs/core-concepts/issues/bulk-ops",
+              "plane_docs/core-concepts/issues/timeline-dependency",
+              "plane_docs/core-concepts/issues/epics",
+              "plane_docs/core-concepts/projects/initiatives",
+              "plane_docs/core-concepts/workspaces/teamspaces",
+              "plane_docs/core-concepts/projects/project-states",
+              "plane_docs/core-concepts/projects/project-overview",
+              "plane_docs/core-concepts/export",
+              "plane_docs/core-concepts/stickies"
+            ]
+          },
+          {
+            "group": "Visualization",
+            "pages": [
+              "plane_docs/core-concepts/account/overview",
+              "plane_docs/your-work",
+              "plane_docs/core-concepts/issues/layouts",
+              "plane_docs/core-concepts/views",
+              "plane_docs/core-concepts/analytics"
+            ]
+          },
+          {
+            "group": "Navigation",
+            "pages": [
+              "plane_docs/core-concepts/power-k"
+            ]
+          },
+          {
+            "group": "Workspace + user management",
+            "pages": [
+              "plane_docs/core-concepts/workspaces/overview",
+              "plane_docs/core-concepts/workspaces/members",
+              "plane_docs/workspaces-and-users/billing-and-plans",
+              "plane_docs/workspaces-and-users/upgrade-plan",
+              "plane_docs/core-concepts/account/settings"
+            ]
+          },
+          {
+            "group": "Knowledge management",
+            "pages": [
+              "plane_docs/core-concepts/pages/overview",
+              "plane_docs/core-concepts/pages/wiki"
+            ]
+          },
+          {
+            "group": "Importers",
+            "pages": [
+              "plane_docs/importers/overview",
+              "plane_docs/importers/jira",
+              "plane_docs/importers/linear",
+              "plane_docs/importers/asana"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "plane_docs/integrations/about",
+              "plane_docs/integrations/github",
+              "plane_docs/integrations/slack",
+              "plane_docs/integrations/gitlab"
+            ]
+          },
+          {
+            "group": "Performance",
+            "pages": [
+              "plane_docs/performance/hyper-mode"
+            ]
+          },
+          {
+            "group": "Devices",
+            "pages": [
+              "plane_docs/devices/mobile"
+            ]
+          },
+          {
+            "group": "Introduction",
+            "pages": []
+          },
+          {
+            "group": "Intro Webhooks",
+            "pages": []
+          },
+          {
+            "group": "Changelog",
+            "pages": []
           }
         ]
       }
@@ -58,45 +405,90 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Back to Onestack",
+          "href": "https://onestack.cloud",
+          "icon": "house"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "href": "https://community.onestack.cloud",
+          "icon": "telegram"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://blog.onestack.cloud",
           "icon": "newspaper"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logo_black_text.png",
+    "dark": "/logo/logo_white_text.png"
   },
+  "redirects": [
+    {
+      "source": "/cal_docs/images/:path*",
+      "destination": "/images/:path*"
+    },
+    {
+      "source": "/document-signing/:path*",
+      "destination": "/documenso-docs/apps/documentation/public/document-signing/:path*"
+    },
+    {
+      "source": "/direct-links/:path*",
+      "destination": "/documenso-docs/apps/documentation/public/direct-links/:path*"
+    },
+    {
+      "source": "/api-reference/:path*",
+      "destination": "/documenso-docs/apps/documentation/public/api-reference/:path*"
+    },
+    {
+      "source": "/embedding/:path*",
+      "destination": "/documenso-docs/apps/documentation/public/embedding/:path*"
+    },
+    {
+      "source": "/get-started-images/:path*",
+      "destination": "/documenso-docs/apps/documentation/public/get-started-images/:path*"
+    },
+    {
+      "source": "/public-api-images/:path*",
+      "destination": "/documenso-docs/apps/documentation/public/public-api-images/:path*"
+    },
+    {
+      "source": "/public-profile/:path*",
+      "destination": "/documenso-docs/apps/documentation/public/public-profile/:path*"
+    },
+    {
+      "source": "/teams/:path*",
+      "destination": "/documenso-docs/apps/documentation/public/teams/:path*"
+    },
+    {
+      "source": "/templates/:path*",
+      "destination": "/documenso-docs/apps/documentation/public/templates/:path*"
+    },
+    {
+      "source": "/webhook-images/:path*",
+      "destination": "/documenso-docs/apps/documentation/public/webhook-images/:path*"
+    }
+  ],
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@onestack.cloud"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.onestack.cloud"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/Onestack-cloud",
+      "linkedin": "https://linkedin.com/company/onestack-cloud"
     }
   }
 }
