@@ -1,0 +1,98 @@
+---
+title: "Manage and track your sprints using Cycles"
+description: "A Cycle is a set period of time where your team focuses on completing specific tasks or issues, similar to sprints in Agile. Each Cycle is flexible, allowing you to prioritize and tackle backlog items at your own pace."
+---
+
+Using Cycles, your team stays organized, meets deadlines, and keeps moving forward efficiently. It’s all about getting things done without the overwhelm!
+
+## Turn on cycles[​](#turn-on-cycles "Direct link to Turn on cycles")
+
+By default, Cycles are automatically turned on when you create a new project. If you ever want to switch them off or back on, you can easily do that by navigating to **Settings > Features** in your project's ellipsis (…) menu.
+
+## Create cycles[​](#create-cycles "Direct link to Create cycles")
+
+<Warning>
+  Two cycles cannot have overlapping dates.
+</Warning>
+
+To create a new Cycle, just press `Q` from anywhere in your project. Or, you can head to the **Cycles** page under your project in the sidebar and click the **Add Cycle** button. You’ll need to give it a name and set the start and due dates. If you want, you can also add a description—either right away or later on! ![Create cycle](/images/core-concepts/cycles/create-cycles.webp)
+
+<Warning>
+  If the Project Admin sets the **Timezone** in [Project settings](/core-concepts/projects/overview#project-settings), the Cycle schedules (start and end) will align with it. However, Members will view Cycles starting and stopping based on the timezone set in their [profile settings](/core-concepts/account/settings#timezone-and-language).
+</Warning>
+
+## Add work items to cycles[​](#add-work-items-to-cycles "Direct link to Add work items to cycles")
+
+* After you create a cycle, you can start adding new work items or bringing in existing work items right in the Cycle page. ![Empty cycle](/images/core-concepts/cycles/cycle-empty-state.webp)
+
+* You can also link a Cycle directly as a property within any work item. ![Cycle property](/images/core-concepts/cycles/cycle-property.webp)
+
+## Cycle states[​](#cycle-states "Direct link to Cycle states")
+
+* **Active cycle** An active cycle is the current, ongoing cycle (the current date falls within the cycle's start and due dates) in which a team is working to complete a set of tasks or user stories within a defined time period. Only one cycle can be active at a time.
+
+* **Upcoming cycle** A cycle with a start date in the future is considered upcoming. This allows teams to plan their next phase of work in advance, ensuring a seamless transition from the current active cycle to the next, with everything lined up and ready to go.
+
+* **Completed cycle** When a cycle’s due date has passed, it moves into the completed state. This reflects that the work scheduled during that cycle is finished, and the team can move on to review, wrap-up, and start planning for future cycles. Completed cycles are not editable, however you can transfer work items that are incomplete to an active or upcoming cycle.
+
+<Check>
+  You can modify the name, description, start and due dates of active and upcoming cycles at any time.
+</Check>
+
+## Start and stop cycles[​](#start-and-stop-cycles "Direct link to Start and stop cycles")
+
+Pro
+
+While Cycles typically run for their set duration, sometimes you need more flexibility in managing your work periods. You can manually control when a Cycle begins or ends using the interface controls.
+
+To start a Cycle, simply click the **Start Cycle** button next to your upcoming Cycle. This is particularly useful when you want to begin a planned Cycle earlier than its scheduled start date or if you need to start a fresh Cycle immediately.
+
+<Check>
+  You can't start a new Cycle while another is in progress. To begin a new Cycle, you'll need to stop the currently active one first.
+</Check>
+
+![Start Cycle](/images/core-concepts/cycles/start-cycle.webp)
+
+To end a Cycle before its scheduled completion date, you can:
+
+1. Click the three-dot menu (⋯) on the active Cycle.
+
+2. Select **End Cycle** from the three dots menu to the right of the active cycle.
+
+   <Warning>
+     You can't restart a Cycle after it's been manually ended.
+   </Warning>
+
+3. Once you end a Cycle, it will be marked as completed and move to your **Completed cycle** section.
+
+![End Cycle](/images/core-concepts/cycles/end-cycle.webp)
+
+Any unfinished work items in the ended Cycle will remain in their current state. The burn-down chart and progress metrics will be finalized based on the completion status at the time you end the Cycle.
+
+This manual control gives you the flexibility to adapt your Cycles to your team's actual work rhythm, rather than being strictly bound to predetermined dates.
+
+## Transfer work items[​](#transfer-work-items "Direct link to Transfer work items")
+
+Once the due date of an active Cycle passes, it’s automatically marked as completed. After that, you can easily transfer any unfinished work items to an active or upcoming cycle, making it simple to move any leftover tasks to the next cycle.
+
+![Transfer work items](/images/core-concepts/cycles/transfer-issues.webp)
+
+## Track active cycle[​](#track-active-cycle "Direct link to Track active cycle")
+
+Once a cycle is active and contains work items, you can monitor its progress, assess the team's productivity, and review the breakdown of priorities in the Cycles page of the project. This section also allows you to investigate any discrepancies if the cycle is not proceeding as expected.
+
+![Track cycle progress](/images/core-concepts/cycles/track-cycle-progress.webp)
+
+## Active cycles across projects[​](#active-cycles-across-projects "Direct link to Active cycles across projects")
+
+Pro
+
+If you have multiple projects with Cycles running at the same time, you can easily track the progress of all active cycles in the **Cycles** section under the **Workspace** section in the sidebar. This gives you a quick overview of each project’s progress and helps you spot any potential issues early on. Each cycle displays its status—whether it’s ahead of schedule or falling behind—based on the burn-down and build-up metrics. ![Active cycles](/images/core-concepts/cycles/active-cycles-across-projects.webp)
+
+## Archive cycles[​](#archive-cycles "Direct link to Archive cycles")
+
+You can archive completed cycles, allowing you to conceal significantly older cycles from your views.
+
+## Delete cycles[​](#delete-cycles "Direct link to Delete cycles")
+
+You can delete a Cycle to remove it entirely. When you do, all associated analytics and progress reports will be erased. Any work items linked to that Cycle will also be automatically unlinked.
